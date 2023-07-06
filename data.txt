@@ -1,0 +1,21 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario,
+e inseritela in un file .txt all'interno della repo, proprio come fatto stamattina insieme.
+
+
+nome tabella : 'auto usate'
+
+id                             intero       medium unsigned    UNIQUE  PRIMARY_KEY AUTOINCREMENT
+brand                          stringa      VARCHAR(30)        NOT_NULL
+modello                        stringa      VARCHAR(40)        NOT_NULL
+alimentazione                  stringa      VARCHAR(30)        NOT_NULL
+anno_immatricolazione          data         YEAR               NOT_NULL
+kilometri_percorsi             intero       TINYINT            NULL
+prezzo                         float        (9,2)              NULL
+cambio                         stringa      VARCHAR(25)        NOT_NULL
+posti                          intero       TINYINT            NOT_NULL
+tipologia                      stringa      VARCHAR(20)        NULL
+colore                         stringa      TEXT               NULL
+classe_emissioni               stringa      VARCHAR(6)         NULL
+potenza_kw                     float        (7,3)              NULL
+potenza_cv                     intero       TINYINT            NULL
+descrizione_veicolo            stringa      TEXT               NULL
